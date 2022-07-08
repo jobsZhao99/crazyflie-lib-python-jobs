@@ -247,6 +247,7 @@ class PositionHlCommander:
         distance = math.sqrt(dx * dx + dy * dy + dz * dz)
 
         if distance > 0.0:
+            ###JobsChanged
             duration_s = distance / self._velocity(velocity)
             logger.info("stop time is %f",duration_s)
             # self._hl_commander.go_to(x, y, z, 0, duration_s)
